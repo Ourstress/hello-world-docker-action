@@ -7,6 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
+      uses: actions/checkout@master
       uses: ./action
       with:
         who-to-greet: 'Happy Cat'
